@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT OR Apache-2.0
 //! Command nixnetctl is a thin formatter over `/run/nixnet/status.json`.
 //! It never talks to nixnetd over a socket -- there isn't one; reading the
 //! file is enough, and keeps the daemon's listening surface at zero

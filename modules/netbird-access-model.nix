@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # modules/netbird-access-model.nix
 #
 # nixnet.netbirdAccessModel — declare the SHAPE of a NetBird account's

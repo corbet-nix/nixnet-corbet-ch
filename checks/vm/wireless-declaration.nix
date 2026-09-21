@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # checks/vm/wireless-declaration.nix — RADIO-4.
 #
 # A refusal check, not a VM test, and the distinction is the behaviour: every case here must fail

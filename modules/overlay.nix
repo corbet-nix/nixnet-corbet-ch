@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # modules/overlay.nix
 #
 # nixnet.overlay — turn THIS host into a self-hosted NetBird overlay client,

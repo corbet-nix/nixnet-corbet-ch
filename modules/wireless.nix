@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # modules/wireless.nix
 #
 # nixnet.wireless — the radios a host has, the networks it may join, and which of them stays

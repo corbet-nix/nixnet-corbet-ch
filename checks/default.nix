@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # checks/default.nix
 #
 # The checks output: EVAL-TIME assertions on rendered module values (this

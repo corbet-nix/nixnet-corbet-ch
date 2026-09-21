@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # NixNet's NixOS-only owner for bpftune.
 #
 # bpftune continuously changes transport-related kernel policy, so a host must

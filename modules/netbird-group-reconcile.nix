@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # modules/netbird-group-reconcile.nix
 #
 # nixnet.netbirdGroupReconcile — keep NetBird peer->group membership in

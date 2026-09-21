@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT OR Apache-2.0
 //! Mirrors `<stateDir>/state.json` -- the hysteresis counters and last
 //! winners that let a killed/restarted daemon reconverge with no special
 //! recovery code path. Loading this at startup is what makes that true:

@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT OR Apache-2.0
 //! Shared "write .tmp, fsync, [chmod,] rename()" helper. The Go source
 //! hand-rolls this exact dance three separate times (`publish/hosts.go`'s
 //! `atomicWrite`, `engine/state.go`'s `saveStateLocked`, `status/status.go`'s

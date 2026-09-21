@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT OR Apache-2.0
 //! `SO_BINDTODEVICE` -- binding a socket to a specific network interface
 //! (a Linux-only socket option) so a probe genuinely exercises the named
 //! NIC's route rather than whatever the kernel's default route selection

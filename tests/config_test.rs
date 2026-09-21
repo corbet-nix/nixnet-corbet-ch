@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT OR Apache-2.0
 //! testdata/nix-rendered-example.json is not hand-written: it's the
 //! actual config.json `modules/core.nix` + `modules/netbird-provider.nix`
 //! rendered for this repo's own README quickstart example, captured via

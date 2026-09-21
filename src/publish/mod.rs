@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT OR Apache-2.0
 //! The two publish backends: a managed `/etc/hosts` block for peers
 //! (`hosts`) and route-metric reprioritization for uplinks (`route`).
 //! Two independent backends because peers publish an *address* (consumed

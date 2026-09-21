@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT OR Apache-2.0
 //! Managed `/etc/hosts` block for peers. Content outside the BEGIN/END
 //! markers is never touched by the daemon -- BOTH sides of the block. The
 //! prefix is seeded once, at boot/switch, by the NixOS activation script

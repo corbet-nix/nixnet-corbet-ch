@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT OR Apache-2.0
 //! Implements nixnet's per-transport health state machine and per-group
 //! winner selection. One OS thread per transport, its own ticker (a
 //! slow/hung probe never delays another); all shared runtime state behind

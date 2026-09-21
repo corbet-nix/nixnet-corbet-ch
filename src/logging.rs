@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT OR Apache-2.0
 //! Minimal stderr logger mirroring the Go original's
 //! `log.New(os.Stderr, "", log.LstdFlags|log.Lmsgprefix)`: one
 //! "<date> <time> <message>" line per call, no other prefix, no other

@@ -26,8 +26,8 @@
   <nav>
     <a href="/" class="nav-brand">nixnet</a>
     <div class="nav-links">
-      <a href="https://github.com/julian-corbet/nixnet-corbet-ch/blob/main/docs/providers.md">Docs</a>
-      <a href="https://github.com/julian-corbet/nixnet-corbet-ch">GitHub</a>
+      <a href="https://github.com/corbet-nix/nixnet-corbet-ch/blob/main/docs/providers.md">Docs</a>
+      <a href="https://github.com/corbet-nix/nixnet-corbet-ch">GitHub</a>
       <a href="#install">Install</a>
       <details class="nav-family">
         <summary>nix* family</summary>
@@ -66,7 +66,7 @@
     </p>
     <div class="cta">
       <a href="#install" class="btn btn-primary">Get started</a>
-      <a href="https://github.com/julian-corbet/nixnet-corbet-ch" class="btn btn-secondary">View on GitHub</a>
+      <a href="https://github.com/corbet-nix/nixnet-corbet-ch" class="btn btn-secondary">View on GitHub</a>
     </div>
   </div>
 
@@ -241,7 +241,7 @@ every ordinary NSS files-then-dns lookup</code></pre>
       are the open ledger of which values still need real numbers. The
       peer/<code>/etc/hosts</code> half is considerably better exercised than
       the uplink/route-metric half. And
-      <a href="https://github.com/julian-corbet/nixnet-corbet-ch/blob/main/docs/providers.md#documented-deviations-and-judgment-calls">docs/providers.md</a>
+      <a href="https://github.com/corbet-nix/nixnet-corbet-ch/blob/main/docs/providers.md#documented-deviations-and-judgment-calls">docs/providers.md</a>
       lists every place the code fills a gap the option surface didn't pin down,
       rather than leaving it implicit.
     </p>
@@ -257,7 +257,7 @@ every ordinary NSS files-then-dns lookup</code></pre>
         <p>Import the core module and turn it on. Providers are opt-in additional imports.</p>
         <pre><code>{
   inputs.nixnet.url =
-    "github:julian-corbet/nixnet-corbet-ch";
+    "github:corbet-nix/nixnet-corbet-ch";
 }
 
 # host configuration.nix
@@ -275,7 +275,7 @@ nixnet.enable = true;</code></pre>
       <div class="install-method">
         <h3>From source</h3>
         <p>The daemon is a single Rust crate with two binaries; the modules are plain Nix. <code>Cargo.lock</code> is committed, so both build paths work fully offline.</p>
-        <pre><code>git clone https://github.com/julian-corbet/nixnet-corbet-ch
+        <pre><code>git clone https://github.com/corbet-nix/nixnet-corbet-ch
 cd nixnet-corbet-ch
 nix build .#nixnet   # or: cargo build --release</code></pre>
       </div>
@@ -320,14 +320,14 @@ nix build .#nixnet   # or: cargo build --release</code></pre>
 <footer>
   <div class="container">
     <div class="footer-links">
-      <a href="https://github.com/julian-corbet/nixnet-corbet-ch/blob/main/docs/providers.md">Docs</a>
-      <a href="https://github.com/julian-corbet/nixnet-corbet-ch">Source</a>
-      <a href="https://github.com/julian-corbet/nixnet-corbet-ch/issues">Issues</a>
-      <a href="https://github.com/julian-corbet/nixnet-corbet-ch/blob/main/LICENSE">License</a>
+      <a href="https://github.com/corbet-nix/nixnet-corbet-ch/blob/main/docs/providers.md">Docs</a>
+      <a href="https://github.com/corbet-nix/nixnet-corbet-ch">Source</a>
+      <a href="https://github.com/corbet-nix/nixnet-corbet-ch/issues">Issues</a>
+      <a href="https://github.com/corbet-nix/nixnet-corbet-ch/blob/main/LICENSE">License</a>
     </div>
     <p>
-      <a href="https://github.com/julian-corbet/nixnet-corbet-ch/blob/main/LICENSE">MIT licensed</a> &middot;
-      <a href="https://github.com/julian-corbet">julian-corbet</a>
+      <a href="https://github.com/corbet-nix/nixnet-corbet-ch/blob/main/LICENSE">MIT licensed</a> &middot;
+      <a href="https://github.com/corbet-nix">corbet-nix</a>
     </p>
   </div>
 </footer>

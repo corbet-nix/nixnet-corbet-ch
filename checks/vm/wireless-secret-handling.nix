@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # checks/vm/wireless-secret-handling.nix — RADIO-5.
 #
 # Two kinds of evidence, because the behaviour has two halves and evidence for one is not evidence

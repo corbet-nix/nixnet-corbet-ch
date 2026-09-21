@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # checks/vm/wireless-outranks-modem.nix — RADIO-2.
 #
 # What "Wi-Fi outranks the modem" IS, at the layer it is decidable: two default routes on one host,

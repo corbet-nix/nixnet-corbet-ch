@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # checks/vm/firewall-apply-failure.nix — FW-3.
 #
 # The load-bearing entry of BEHAVIORS.md, and the one currently false in

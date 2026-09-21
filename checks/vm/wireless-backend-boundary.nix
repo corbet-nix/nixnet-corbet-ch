@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # checks/vm/wireless-backend-boundary.nix — RADIO-6.
 #
 # FW-6's shape, one layer up: a selection this backend cannot satisfy must SAY so, because

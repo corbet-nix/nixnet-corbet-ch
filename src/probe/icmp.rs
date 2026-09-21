@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT OR Apache-2.0
 //! Privileged raw ICMPv4 echo probe. Requires `CAP_NET_RAW`, which
 //! `modules/core.nix` grants via `AmbientCapabilities` whenever any
 //! transport uses `method = "icmp"` or `bindToInterface = true`

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # checks/vm/wireless-power-policy.nix — RADIO-3.
 #
 # Three states, all read back from NetworkManager rather than from the script's own log:

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # lib/ruleset.nix — the nftables ruleset GENERATOR for `nixnet.firewall`. Pure: declared values in,
 # lines of nftables text out. No `pkgs`, no paths, nothing that can only be evaluated on the host
 # that will load it.

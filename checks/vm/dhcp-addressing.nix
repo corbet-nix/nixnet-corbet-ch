@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # checks/vm/dhcp-addressing.nix — OWN-1, TEST-2.
 #
 # The incident this repo is being rebuilt around: a default-deny input chain on

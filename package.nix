@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # The nixnetd + nixnetctl build, shared by flake.nix's `packages` output and
 # modules/core.nix's `nixnet.package` default so there is exactly
 # one place this derivation is defined.
@@ -24,8 +25,8 @@ rustPlatform.buildRustPackage {
   # previous Go derivation had.
   meta = {
     description = "Provider-agnostic transport failover daemon: peer address publish + uplink route-metric publish, health-checked, hysteresis-damped";
-    homepage = "https://github.com/julian-corbet/nixnet-corbet-ch";
-    license = lib.licenses.mit;
+    homepage = "https://github.com/corbet-nix/nixnet-corbet-ch";
+    license = with lib.licenses; [ mit asl20 ];
     mainProgram = "nixnetd";
     platforms = lib.platforms.linux;
   };

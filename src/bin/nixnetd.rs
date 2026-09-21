@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT OR Apache-2.0
 //! Command nixnetd is nixnet's resident health-check + publish daemon.
 //!
 //! nixnetd is entirely Nix-unaware: it reads one JSON config file and

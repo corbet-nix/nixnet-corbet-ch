@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT OR Apache-2.0
 //! nixnet's shared library crate. `nixnetd` (the resident daemon,
 //! `src/bin/nixnetd.rs`) and `nixnetctl` (the status CLI,
 //! `src/bin/nixnetctl.rs`) are both thin mains over the modules here --

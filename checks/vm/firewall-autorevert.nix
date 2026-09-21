@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # checks/vm/firewall-autorevert.nix — FW-5.
 #
 # The dead-man switch is the one part of this module that can, by design, take a firewall away. So

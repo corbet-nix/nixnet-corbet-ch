@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # modules/cloudflared-provider.nix
 #
 # nixnet's charter is broader than "peer address failover" + "uplink

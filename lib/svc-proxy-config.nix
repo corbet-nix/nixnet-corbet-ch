@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # lib/svc-proxy-config.nix — a pure function generating the SPLIT-HORIZON
 # in-cluster routing surface (an nginx config + a CoreDNS zone) from a
 # service registry, so an in-cluster caller of `<svc>.<zone>` gets the

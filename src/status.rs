@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT OR Apache-2.0
 //! Renders `/run/nixnet/status.json` -- the live health snapshot
 //! `nixnetctl` reads. There is no control socket; reading the file directly
 //! is sufficient and keeps the daemon's listening surface at zero sockets.

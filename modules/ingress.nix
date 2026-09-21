@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # modules/ingress.nix
 #
 # nixnet.ingress — provision a Cloudflare Tunnel (public hostname ->

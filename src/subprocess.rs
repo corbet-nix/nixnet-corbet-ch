@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT OR Apache-2.0
 //! Bounded execution for the daemon's external helpers.
 //!
 //! Every child gets its own process group, bounded stdout/stderr pipes, a

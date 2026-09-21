@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # modules/netbird-provider.nix
 #
 # The first-party reference provider. Wraps upstream

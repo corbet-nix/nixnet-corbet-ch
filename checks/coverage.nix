@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # checks/coverage.nix — TEST-1, and the only honest place to record what this
 # repo cannot yet prove about itself.
 #

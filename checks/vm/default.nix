@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # checks/vm/default.nix — the behaviour check set.
 #
 # Mostly VM tests, plus the REFUSAL checks for the behaviours that are decided on

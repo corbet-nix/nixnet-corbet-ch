@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # NixNet's native-package declaration for foreign system-manager hosts.
 #
 # It names mechanisms, not a generic "network stack": a host chooses only

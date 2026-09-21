@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # Native package names for the mechanisms NixNet can declare on a foreign
 # system-manager host. This is data only: the backend publishes the names and
 # the host's own reconciler installs the distro packages.

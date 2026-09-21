@@ -3,8 +3,8 @@ name = "nixnet"
 version = "0.1.0"
 edition = "2021"
 description = "Provider-agnostic transport failover daemon: peer address publish + uplink route-metric publish, health-checked, hysteresis-damped"
-homepage = "https://github.com/julian-corbet/nixnet-corbet-ch"
-license = "MIT"
+homepage = "https://github.com/corbet-nix/nixnet-corbet-ch"
+license = "MIT OR Apache-2.0"
 publish = false
 
 # nixnetd (resident daemon) and nixnetctl (status CLI) share all their

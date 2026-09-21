@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # nixnet.wireguard -- a small, authenticated dual-stack private transit.
 #
 # The module deliberately routes private IPv4 and IPv6 over WireGuard instead

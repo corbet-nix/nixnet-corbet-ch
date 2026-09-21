@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT OR Apache-2.0
 //! Plain-HTTP GET probe. Hand-rolled (no HTTP client crate) to keep the
 //! dependency/footprint minimal on an e2-micro-class target: the request
 //! this method ever needs to build is exactly one line plus a `Host`

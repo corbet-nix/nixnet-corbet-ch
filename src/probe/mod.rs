@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT OR Apache-2.0
 //! Implements the four probe methods a transport can use: `tcp`, `http`,
 //! `icmp`, and `exec`.
 

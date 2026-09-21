@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # checks/vm/firewall-foreign-table.nix — FW-2.
 #
 # `flush ruleset` on re-apply deletes every other table on the host: k3s,

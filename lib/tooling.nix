@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # lib/tooling.nix — the tools a host needs in order to LOOK AT what nixnet made it enforce, named
 # per backend.
 #

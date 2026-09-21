@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # modules/firewall.nix
 #
 # nixnet.firewall — this host's packet filter, in the repo that owns the rest of the host's network

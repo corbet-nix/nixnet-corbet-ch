@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # checks/vm/wireless-association.nix — RADIO-1.
 #
 # The production failure, reproduced as a machine that must NOT have it: a real radio, a real

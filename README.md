@@ -43,7 +43,7 @@ it can't.
 
 ```nix
 {
-  inputs.nixnet.url = "github:julian-corbet/nixnet-corbet-ch";
+  inputs.nixnet.url = "github:corbet-nix/nixnet-corbet-ch";
 }
 # host configuration.nix:
 imports = [ inputs.nixnet.nixosModules.default ];
@@ -889,7 +889,7 @@ instead, import `systemManagerModules.core`:
 
 ```nix
 {
-  inputs.nixnet.url = "github:julian-corbet/nixnet-corbet-ch";
+  inputs.nixnet.url = "github:corbet-nix/nixnet-corbet-ch";
 }
 imports = [ inputs.nixnet.systemManagerModules.core ];
 nixnet.enable = true;
@@ -1036,18 +1036,18 @@ Calibrate accordingly before adopting:
 
 nixnet is one of several small, independently-usable open-source projects
 sharing a common design system:
-[nixram](https://github.com/julian-corbet/nixram-corbet-ch) (RAM-pressure
+[nixram](https://github.com/corbet-nix/nixram-corbet-ch) (RAM-pressure
 tuning by declared level),
-[nixarch](https://github.com/julian-corbet/nixarch-corbet-ch) (declarative
-Arch/CachyOS), [nixvps](https://github.com/julian-corbet/nixvps-corbet-ch)
+[nixarch](https://github.com/corbet-nix/nixarch-corbet-ch) (declarative
+Arch/CachyOS), [nixvps](https://github.com/corbet-nix/nixvps-corbet-ch)
 (tiny sub-1GB NixOS VPS profiles),
-[nixremote](https://github.com/julian-corbet/nixremote-corbet-ch)
+[nixremote](https://github.com/corbet-nix/nixremote-corbet-ch)
 (cross-machine native Wayland app forwarding), and
-[nixsh](https://github.com/julian-corbet/nixsh-corbet-ch) (the
+[nixsh](https://github.com/corbet-nix/nixsh-corbet-ch) (the
 safe-adoption pattern for declarative shell config, across fish, bash and zsh). nixnet's own
 niche is purely transport failover — usable alongside any of them, or
 standalone.
 
-## License
+## Licence
 
-MIT.
+Outbound licence is `MIT OR Apache-2.0`. See `LICENSE-MIT` and `LICENSE-APACHE`; every source file carries `SPDX-License-Identifier: MIT OR Apache-2.0`., and `Cargo.toml` declares `license = "MIT OR Apache-2.0"`.

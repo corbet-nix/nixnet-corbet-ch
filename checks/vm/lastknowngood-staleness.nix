@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # checks/vm/lastknowngood-staleness.nix — STALE-2.
 #
 # Unbounded `lastKnownGood` is not a trade-off, it is a leak. One peer on this

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # checks/vm/hosts-single-writer.nix — PUB-1.
 #
 # Two writers, no handshake, and the root-side writer wins. The daemon

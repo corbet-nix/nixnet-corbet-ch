@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # checks/vm/wireguard-transit.nix — WG-1, WG-2.
 #
 # Three real kernels prove the intended shape: one public listener on the hub,

@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT OR Apache-2.0
 //! A cancellable-sleep shutdown signal, replacing Go's
 //! `signal.NotifyContext` + `<-ctx.Done()` pattern. Every per-transport
 //! ticker loop and the watchdog heartbeat loop hold a clone of this and call

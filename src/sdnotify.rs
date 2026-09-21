@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT OR Apache-2.0
 //! Implements the systemd `sd_notify(3)` protocol without a dependency on
 //! libsystemd -- it's a trivial datagram write, and pulling in a C library
 //! dependency (or even a dedicated crate) would undermine the "single

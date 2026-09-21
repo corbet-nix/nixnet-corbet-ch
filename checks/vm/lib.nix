@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # checks/vm/lib.nix — the VM-test harness itself.
 #
 # Every sharp bug in this repo's history reached production because nothing ever

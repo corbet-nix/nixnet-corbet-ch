@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # Eval check for nixnet's firewall: the rendered ruleset, the rules DERIVED from declared facts,
 # and the assertions that must refuse a configuration rather than render it.
 #

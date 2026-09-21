@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT OR Apache-2.0
 //! Implements the provider exec-probe contract (`docs/providers.md`):
 //! exit code 0 = healthy, non-zero = unhealthy (the only guaranteed
 //! signal); an optional single line of JSON on stdout

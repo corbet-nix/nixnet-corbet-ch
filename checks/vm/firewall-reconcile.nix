@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # checks/vm/firewall-reconcile.nix — FW-4.
 #
 # The premise this test asserts BEFORE it asserts anything else: the apply unit

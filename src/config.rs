@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT OR Apache-2.0
 //! Loads nixnet's runtime configuration from a JSON file (normally
 //! `/etc/nixnet/config.json`, rendered from Nix at build/activation time --
 //! see `modules/core.nix`). `nixnetd` itself is entirely Nix-unaware: it
