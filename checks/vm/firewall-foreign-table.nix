@@ -198,8 +198,10 @@
         overlaylocked.succeed("test $(cat /proc/sys/kernel/modules_disabled) -eq 1")
         overlaylocked.succeed("systemctl is-active --quiet nixnet-overlay-firewall.service")
         overlaylocked.succeed("nft list table inet nixnet-overlay")
+        # nfnetlink is part of netfilter core on Linux 7.2+. The live nft
+        # table above proves that interface works without requiring a module.
         for module in (
-            "af_packet", "nfnetlink", "nf_conntrack", "nf_tables", "nf_nat",
+            "af_packet", "nf_conntrack", "nf_tables", "nf_nat",
             "nft_chain_nat", "nft_masq", "tun"
         ):
             overlaylocked.succeed(f"test -d /sys/module/{module}")

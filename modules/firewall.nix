@@ -62,12 +62,15 @@ let
   # an enabled predecessor.
   firewallKernelModules = [
     "af_packet"
-    "nfnetlink"
     "nf_conntrack"
     "nf_tables"
     "nft_ct"
     "nft_limit"
-  ];
+  ] ++ lib.optional
+    # Linux 7.2 folds nfnetlink into netfilter core (d4349ba9872d); it no
+    # longer has a standalone module for the initrd module closure to copy.
+    (lib.versionOlder config.boot.kernelPackages.kernel.version "7.2")
+    "nfnetlink";
 
   # ── The facts, read from wherever nixnet already declares them ──────────────────────────────
   #

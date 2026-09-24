@@ -179,8 +179,10 @@ in
       modulelocked.succeed("test $(cat /proc/sys/kernel/modules_disabled) -eq 1")
       modulelocked.succeed("systemctl is-active --quiet nixnet-firewall.service")
       modulelocked.succeed("nft list table inet nixnet")
+      # nfnetlink is part of netfilter core on Linux 7.2+. The live nft
+      # table above proves that interface works without requiring a module.
       for module in (
-          "af_packet", "nfnetlink", "nf_conntrack", "nf_tables", "nft_ct", "nft_limit"
+          "af_packet", "nf_conntrack", "nf_tables", "nft_ct", "nft_limit"
       ):
           modulelocked.succeed(f"test -d /sys/module/{module}")
 

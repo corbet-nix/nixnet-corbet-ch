@@ -59,14 +59,17 @@ let
   # teardown of a table left by the enabled generation.
   overlayKernelModules = [
     "af_packet"
-    "nfnetlink"
     "nf_conntrack"
     "nf_tables"
     "nf_nat"
     "nft_chain_nat"
     "nft_masq"
     "tun"
-  ];
+  ] ++ lib.optional
+    # Linux 7.2 folds nfnetlink into netfilter core (d4349ba9872d); it no
+    # longer has a standalone module for the initrd module closure to copy.
+    (lib.versionOlder config.boot.kernelPackages.kernel.version "7.2")
+    "nfnetlink";
 
   overlayRulesActive = cfg.enable && cfg.advertiseRoutes != [ ];
 

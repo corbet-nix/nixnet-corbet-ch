@@ -529,7 +529,55 @@ let
     (n: check "firewall/${n}" renderCheck.${n} "experiments/render-check.nix: ${n} is false")
     (builtins.filter (n: n != "ok") (builtins.attrNames renderCheck));
 
-  allResults = results ++ meshGatewayResults ++ overlayResults ++ overlayV4OnlyResults
+  # Exercise each owning module independently on both sides of the Linux 7.2
+  # merge. Only the version fact changes in these evaluation-only fixtures;
+  # no synthetic kernel is built or booted.
+  kernelModuleResults = lib.concatMap
+    (fixture:
+      lib.concatMap
+        (owner:
+          let
+            kernelCfg = evalModules [
+              owner.module
+              {
+                boot.kernelPackages = pkgs.linuxPackages.extend (_: previous: {
+                  kernel = previous.kernel // { version = fixture.version; };
+                });
+              }
+            ];
+          in lib.concatMap
+            (phase:
+              let selected = phase.modules;
+              in [
+                (check "${owner.name}/${fixture.version}/${phase.name}/nfnetlink"
+                  ((lib.elem "nfnetlink" selected) == fixture.standalone)
+                  "unexpected standalone nfnetlink selection: ${builtins.toJSON selected}")
+                (check "${owner.name}/${fixture.version}/${phase.name}/required-modules"
+                  (lib.all (module: lib.elem module selected) owner.required)
+                  "lost a firewall prerequisite: ${builtins.toJSON selected}")
+              ])
+            [
+              { name = "initrd"; modules = kernelCfg.boot.initrd.kernelModules; }
+              { name = "stage2"; modules = kernelCfg.boot.kernelModules; }
+            ])
+        [
+          {
+            name = "firewall";
+            module = nixnetModule;
+            required = [ "af_packet" "nf_conntrack" "nf_tables" "nft_ct" "nft_limit" ];
+          }
+          {
+            name = "overlay";
+            module = overlayModule;
+            required = [ "af_packet" "nf_conntrack" "nf_tables" "nf_nat" "nft_chain_nat" "nft_masq" "tun" ];
+          }
+        ])
+    [
+      { version = "7.1.9"; standalone = true; }
+      { version = "7.2.4"; standalone = false; }
+    ];
+
+  allResults = kernelModuleResults ++ results ++ meshGatewayResults ++ overlayResults ++ overlayV4OnlyResults
     ++ accessModelResults ++ ingressResults ++ sourceResults ++ firewallResults;
 
   failed = builtins.filter (r: !r.ok) allResults;
