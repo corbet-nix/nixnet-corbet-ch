@@ -541,7 +541,15 @@ let
               owner.module
               {
                 boot.kernelPackages = pkgs.linuxPackages.extend (_: previous: {
-                  kernel = previous.kernel.overrideAttrs (_: { version = fixture.version; });
+                  # NixOS applies kernel.override again for patches/features.
+                  # mainline.nix preserves argsOverride through that call;
+                  # derivation-level overrideAttrs would lose the fixture version.
+                  kernel = previous.kernel.override {
+                    argsOverride = {
+                      version = fixture.version;
+                      modDirVersion = fixture.version;
+                    };
+                  };
                 });
               }
             ];
