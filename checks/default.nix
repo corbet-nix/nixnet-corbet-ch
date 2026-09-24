@@ -541,11 +541,15 @@ let
               owner.module
               {
                 boot.kernelPackages = pkgs.linuxPackages.extend (_: previous: {
-                  kernel = previous.kernel // { version = fixture.version; };
+                  kernel = previous.kernel.overrideAttrs (_: { version = fixture.version; });
                 });
               }
             ];
-          in lib.concatMap
+          in [
+            (check "${owner.name}/${fixture.version}/fixture-kernel-version"
+              (kernelCfg.boot.kernelPackages.kernel.version == fixture.version)
+              "fixture resolved to kernel ${kernelCfg.boot.kernelPackages.kernel.version}")
+          ] ++ lib.concatMap
             (phase:
               let selected = phase.modules;
               in [

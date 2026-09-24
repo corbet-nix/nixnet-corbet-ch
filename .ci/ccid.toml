@@ -27,3 +27,7 @@ commands = [["nix", "build", "--no-link", "--no-update-lock-file", ".#nixnet"]]
 kind = "cargo"
 actions = ["fmt", "test", "clippy"]
 all_targets = true
+
+[checks.firewall-kernel-boundary]
+kind = "commands"
+commands = [["nix", "build", "--no-link", "--no-update-lock-file", ".#checks.x86_64-linux.eval-checks", ".#checks.x86_64-linux.vm-firewall-apply-failure", ".#checks.x86_64-linux.vm-firewall-foreign-table"]]
